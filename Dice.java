@@ -13,6 +13,7 @@ public class Dice {
          faceValue = 1; 
      }
 
+     //mutator method.  Sets the state of the face value. 
      public void roll(){
 
          Random rand = new Random();
@@ -20,6 +21,7 @@ public class Dice {
 
      }
 
+    //accessor method.  GETS the current state of the facevalue.  
     public int getFaceValue(){
 
         return faceValue; 
