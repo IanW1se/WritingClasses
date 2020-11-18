@@ -1,21 +1,13 @@
-public class ClassRunner{
+public class ClassRunner {
 
   public static void main(String [] args){
   
-    Dice d1 = new Dice(6);
-    Dice d2 = new Dice(6);
+    Point p1 = new Point(); 
+    p1.x = 0; //access x field and assign it a value
+    p1.y = 4; 
 
-    System.out.println("Pre Roll");
-    System.out.println(d1.getFaceValue());
-    System.out.println(d2.getFaceValue());
+    System.out.println(p1.x + " , " + p1.y);
 
-    d1.roll();
-    d2.roll();
-
-    System.out.println("Post Roll");
-    System.out.println(d1.getFaceValue());
-    System.out.println(d2.getFaceValue());
-      
   
   }
 
