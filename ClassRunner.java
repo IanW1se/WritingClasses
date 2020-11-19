@@ -2,11 +2,16 @@ public class ClassRunner {
 
   public static void main(String [] args){
   
-    Point p1 = new Point(); 
-    p1.x = 0; //access x field and assign it a value
-    p1.y = 4; 
+   
+   Point p1 = new Point(4, 5);
+   Point p2 = new Point(-3, 10);
+   Point p3 = new Point();
 
-    System.out.println(p1.x + " , " + p1.y);
+   p1.printPoint();
+   p2.printPoint();
+   p3.printPoint();
+
+   
 
   
   }
