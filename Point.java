@@ -30,7 +30,8 @@ public class Point {
     //translate changes a Point's location 
     // by a given amount dx, dy. 
     public void translate(int dx, int dy){
-
+        x += dx;
+        y += dy;
     }
 
     //distance computes the distance between a 
@@ -45,19 +46,36 @@ public class Point {
     //between the Point and the Origin (0,0)
     public double distanceFromOrigin(){
 
-        return 0.0; 
+        return Math.sqrt(Math.pow(x,2) + Math.pow(y, 2));
     }
 
     //returns the quadrant (1,2,3,4) of the x/y plane this Point falls in. 
     public int quadrant() {
 
-        return 1; 
+        if(x > 0) {
+            if(y > 0){
+                return 1;
+            }
+            else{
+                return 4;
+            }
+        }
+        else {
+            if(y > 0){
+                return 2;
+            }
+            else{
+                return 3;
+            }
+        } 
     }
 
     //negates and swaps the x/y coordinates of the Point object. 
     // (5, -3) would become (3, -5)
     public void flip() {
-
+        int temp = y;
+        y = -x;
+        x = -temp; 
     }
 
 
