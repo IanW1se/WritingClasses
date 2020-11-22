@@ -1,4 +1,4 @@
-# WritingClasses
+# :pen: WritingClasses
 
 A Class provides a blueprint for an object, which has fields (data) and behavior (methods).  A class also allows abstracts out the ideas from the details.  This allows for a class to be used without knowing how it's implemented.  All of the other Java classes we've used, implement abstraction.  We can use the `String` or `Random` class, but we don't know exactly how its methods are implemented.  
 
@@ -13,3 +13,15 @@ A Class provides a blueprint for an object, which has fields (data) and behavior
 1. Mutators (Setters): A method that modifies an object's state.  Often has a void return type.  
 2. Accessors (Getters): A method that lets the client examine object state.  Often has a non-void return type.  
 
+## :hammer: Constructors  
+
+A special method that initializes the state of new objects.  It also has the same name as the class.  
+
+```
+public type(parameters) {
+    statements; 
+}
+```
+- A constructor runs when the client uses the `new` keyword and implicitly 'returns' the new object being created.   
+- A class can also have multiple constructors as long as they have unique sets of parameters.  
+- Creating one constructor overrides the default constructor provided by Java.  
