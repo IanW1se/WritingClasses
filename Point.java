@@ -1,8 +1,8 @@
 public class Point {
 
     //create fields 
-    int x;
-    int y; 
+    private int x;
+    private int y; 
 
     //constructor
     public Point(int initX, int initY){
@@ -15,6 +15,25 @@ public class Point {
         y = 0; 
     }
 
+    //set (mutator methods)
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    //get (accessor methods)
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y; 
+    }
+
     //methods
     public void printPoint() {
         System.out.println("(" + x + " ," + y + " )");
@@ -23,9 +42,9 @@ public class Point {
     
     //setLocation changes the location of the 
     //point to the x,y values passed
-    public void setLocation(int thatX, int thatY) {
-        x = thatX; 
-        y = thatY; 
+    public void setLocation(int x, int y) {
+        this.x = x; 
+        this.y = y; 
     }
     //translate changes a Point's location 
     // by a given amount dx, dy. 

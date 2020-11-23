@@ -7,10 +7,10 @@ public class ClassRunner {
    Point p2 = new Point(-3, 10);
    Point p3 = new Point();
 
-   p1.printPoint();
-   p2.printPoint();
-   p3.printPoint();
+   
+    p1.setX(5); 
 
+    System.out.println(p1.getX());
    
 
   
